@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "registry-credential-injector.fullname" . }}
+  labels:
+    {{- include "registry-credential-injector.labels" . | nindent 4 }}
+spec:
+  ports:
+    - port: 443
+      protocol: TCP
+      targetPort: webhooks
+      name: https
+  selector:
+    {{- include "registry-credential-injector.selectorLabels" . | nindent 4 }}

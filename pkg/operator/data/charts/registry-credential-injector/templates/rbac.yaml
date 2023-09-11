@@ -1,0 +1,33 @@
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: {{ include "registry-credential-injector.fullname" . }}
+  labels:
+    {{- include "registry-credential-injector.labels" . | nindent 4 }}
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: {{ include "registry-credential-injector.fullname" . }}
+  labels:
+    {{- include "registry-credential-injector.labels" . | nindent 4 }}
+rules:
+- apiGroups: [""]
+  resources: ["namespaces"]
+  verbs: ["get"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: {{ include "registry-credential-injector.fullname" . }}
+  labels:
+    {{- include "registry-credential-injector.labels" . | nindent 4 }}
+subjects:
+- kind: ServiceAccount
+  namespace: {{ .Release.Namespace }}
+  name: {{ include "registry-credential-injector.fullname" . }}
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: {{ include "registry-credential-injector.fullname" . }}
