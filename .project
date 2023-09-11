@@ -12,7 +12,7 @@ kind: RegistryCredentialInjector
 kubernetesVersion: v0.28.1
 mutatingWebhookEnabled: false
 operatorName: registry-credential-injector-cop.cs.sap.com
-owner: Copyright 2023 SAP SE or an SAP affiliate company and registry-credential-injector-cop
+owner: SAP SE or an SAP affiliate company and registry-credential-injector-cop
   contributors
 resource: registrycredentialinjectors
 spdxLicenseHeaders: true
