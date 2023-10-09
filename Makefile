@@ -124,3 +124,10 @@ envtest: setup-envtest
 	chmod -R u+w $$ENVTESTDIR ;\
 	rm -f $(LOCALBIN)/k8s/current ;\
 	ln -s $$ENVTESTDIR $(LOCALBIN)/k8s/current
+
+.PHONY: update-content
+update-content: ## Update external resources used by this repository.
+	rm -rf pkg/operator/data/charts
+	mkdir -p pkg/operator/data/charts
+	helm fetch oci://ghcr.io/sap/registry-credential-injector-helm/registry-credential-injector --untar --untardir pkg/operator/data/charts
+	rm -f pkg/operator/data/charts/*/*.tgz
