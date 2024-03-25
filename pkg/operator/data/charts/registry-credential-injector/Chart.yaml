@@ -2,5 +2,5 @@ apiVersion: v2
 name: registry-credential-injector
 description: A Helm chart for https://github.com/sap/registry-credential-injector
 type: application
-version: 0.4.21
-appVersion: v0.4.21
+version: 0.4.22
+appVersion: v0.4.22
