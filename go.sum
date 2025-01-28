@@ -143,6 +143,8 @@ github.com/sap/component-operator-runtime v0.3.65 h1:Ov3R9SyLHXlJpwsfTJzdMTnoIWC
 github.com/sap/component-operator-runtime v0.3.65/go.mod h1:Z7W8uqKczNaALq7rEggOuir+5YQVUA/A1/P8L9Az67E=
 github.com/sap/component-operator-runtime v0.3.66 h1:bpg76qkhQn3j1CfyoSRlyyp71NTVVef297r70TnR1JY=
 github.com/sap/component-operator-runtime v0.3.66/go.mod h1:7f7v3XXG7hSLjmLe1qgauBFvEYmyWtWi9AK72RwzNtI=
+github.com/sap/component-operator-runtime v0.3.67 h1:7A9bEikT5d8eDYKs7YrCpRFElHPiBjYeNAWeQDjminU=
+github.com/sap/component-operator-runtime v0.3.67/go.mod h1:7f7v3XXG7hSLjmLe1qgauBFvEYmyWtWi9AK72RwzNtI=
 github.com/sap/go-generics v0.2.21 h1:WfRIqFSwEzHNww+q4iayCpo139EXIoKCIyv45qfo62o=
 github.com/sap/go-generics v0.2.21/go.mod h1:RctuDlZAmijeTY6LDaqhLYeepxdiR8AxPxlu7UQHNz0=
 github.com/sap/go-generics v0.2.22 h1:2CIlZaE6eSH3cNI69lqmLeingv+5u9sMHEP9Sfvp0ZA=
@@ -312,6 +314,7 @@ sigs.k8s.io/controller-runtime/tools/setup-envtest v0.0.0-20250120152635-f06cac4
 sigs.k8s.io/controller-runtime/tools/setup-envtest v0.0.0-20250121065037-b2dbf6eaa9fa/go.mod h1:Is2SwCWbWAoyGVoVBA627n1SWhWaEwUhaIYSEbtzHT4=
 sigs.k8s.io/controller-runtime/tools/setup-envtest v0.0.0-20250122230437-09740a350f8a/go.mod h1:Is2SwCWbWAoyGVoVBA627n1SWhWaEwUhaIYSEbtzHT4=
 sigs.k8s.io/controller-runtime/tools/setup-envtest v0.0.0-20250123144258-91e102ffc63c/go.mod h1:Is2SwCWbWAoyGVoVBA627n1SWhWaEwUhaIYSEbtzHT4=
+sigs.k8s.io/controller-runtime/tools/setup-envtest v0.0.0-20250128070323-990f2eddd615/go.mod h1:Is2SwCWbWAoyGVoVBA627n1SWhWaEwUhaIYSEbtzHT4=
 sigs.k8s.io/controller-tools v0.16.5 h1:5k9FNRqziBPwqr17AMEPPV/En39ZBplLAdOwwQHruP4=
 sigs.k8s.io/controller-tools v0.16.5/go.mod h1:8vztuRVzs8IuuJqKqbXCSlXcw+lkAv/M2sTpg55qjMY=
 sigs.k8s.io/json v0.0.0-20241010143419-9aa6b5e7a4b3 h1:/Rv+M11QRah1itp8VhT6HoVx1Ray9eB4DBr+K+/sCJ8=
