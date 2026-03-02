@@ -1,6 +1,6 @@
 # registry-credential-injector
 
-![Version: 0.4.70](https://img.shields.io/badge/Version-0.4.70-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v0.4.73](https://img.shields.io/badge/AppVersion-v0.4.73-informational?style=flat-square)
+![Version: 0.4.71](https://img.shields.io/badge/Version-0.4.71-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: v0.4.74](https://img.shields.io/badge/AppVersion-v0.4.74-informational?style=flat-square)
 
 A Helm chart for https://github.com/sap/registry-credential-injector
 
@@ -43,6 +43,7 @@ A Helm chart for https://github.com/sap/registry-credential-injector
 | webhook.objectSelector.matchExpressions | list | `[]` | Object selector matchExpressions, used by webhook |
 | webhook.namespaceSelector.matchLabels | object | `{}` | Namespace selector matchLabels, used by webhook |
 | webhook.namespaceSelector.matchExpressions | list | `[]` | Namespace selector matchExpressions, used by webhook |
+| webhook.matchConditions | list | `[]` | Match conditions for webhooks can be used for fine-grained request filtering. Docs: https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/#matching-requests-matchconditions |
 | logLevel | int | `0` | Log level |
 | defaultPullSecret | string | `""` | Default pull secret (required) |
 
